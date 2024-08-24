@@ -1,4 +1,4 @@
-/*Desenvolva um algoritmo que leia o valor de um produto e aplique um desconto a ser especificado pelo usuário.
+package Aula02;/*Desenvolva um algoritmo que leia o valor de um produto e aplique um desconto a ser especificado pelo usuário.
 Ao final do programa, apresente o nome do produto, seu antigo valor e o valor com desconto aplicado com três casas decimais.*/
 
 import java.util.Scanner;

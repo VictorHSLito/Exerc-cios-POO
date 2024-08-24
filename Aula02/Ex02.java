@@ -1,4 +1,4 @@
-/*Faça um programa para ler o valor de um círculo, e depois mostre o valor da área deste círculo com quatro casas decimais.
+package Aula02;/*Faça um programa para ler o valor de um círculo, e depois mostre o valor da área deste círculo com quatro casas decimais.
 Você deverá utilizar o JOptionPane. */
 
 import javax.swing.JOptionPane;

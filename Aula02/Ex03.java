@@ -1,4 +1,4 @@
-/*Faça um algoritmo que leia o número de horas trabalhadas de um funcionário, o valor que ele recebe por hora e calcule o salário desse funcionário.
+package Aula02;/*Faça um algoritmo que leia o número de horas trabalhadas de um funcionário, o valor que ele recebe por hora e calcule o salário desse funcionário.
 Apresente o salário do funcionário com duas casas decimais.*/
 
 import java.util.Scanner;

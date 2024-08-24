@@ -1,4 +1,4 @@
-/*Faça um algoritmo que leia o salário de um funcionário e aplique um aumento de 15% sobre o salário.
+package Aula02;/*Faça um algoritmo que leia o salário de um funcionário e aplique um aumento de 15% sobre o salário.
 Ao final do algoritmo apresente o antigo salário e o salário reajustado com duas casas decimais. Você deverá utilizar o JOPtionPane.*/
 
 import javax.swing.JOptionPane;
