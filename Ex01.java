@@ -16,5 +16,6 @@ public class Ex01 {
         }
         media = (media)/5;
         System.out.println("A media final vale: " + media);
+        sc.close();
     }
 }
