@@ -16,6 +16,7 @@ public class Principal {
                 teste = t1.verificaTriangulo();
             } while (teste != true);
         }
+
         System.out.println("Agora digite os lados do segundo triangulo: ");
         t2.lerLados();
         teste = t2.verificaTriangulo();

@@ -41,9 +41,8 @@ public class Triangulo {
     }
 
     public double calculaArea(float perimetro) {
-        double area = Math.sqrt(perimetro*(perimetro - this.triangulo[0])*
+        return Math.sqrt(perimetro*(perimetro - this.triangulo[0])*
                 (perimetro - this.triangulo[1])*(perimetro-this.triangulo[2]));
-        return area;
     }
 
 }
