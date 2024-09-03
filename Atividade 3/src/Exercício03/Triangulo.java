@@ -8,7 +8,6 @@ public class Triangulo {
 
     Scanner sc = new Scanner(System.in);
 
-
     public void lerLados() {
         for (int i = 0; i < 3; i++) {
             this.triangulo[i] = sc.nextInt();

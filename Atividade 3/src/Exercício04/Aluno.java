@@ -15,27 +15,21 @@ public class Aluno {
         if (cont == 0) {
             if (notas[cont] < 0 || notas[cont] > 30 ) {
                 while (notas[cont] < 0 || notas[cont] > 30) {
-                    System.out.println("Nota inválida para esse trimestre! Digite novamente: ");
+                    System.out.println("Nota inválida para esse trimestre! Digite uma nota entre [0, 30]: ");
                     notas[cont] = sc.nextFloat();
                 }
-                soma+= notas[cont];
             }
-            else {
-                soma+= notas[cont];
-            }
+            soma+= notas[cont];
         }
 
         if (cont == 1 || cont == 2) {
             if (notas[cont] < 0 || notas[cont] > 35 ) {
                 while (notas[cont] < 0 || notas[cont] > 35) {
-                    System.out.println("Nota inválida para esse trimestre! Digite novamente: ");
+                    System.out.println("Nota inválida para esse trimestre! Digite novamente uma nota entre [0, 35]: ");
                     notas[cont] = sc.nextFloat();
                 }
-                soma+= notas[cont];
             }
-            else {
-                soma += notas[cont];
-            }
+            soma+= notas[cont];
         }
         cont++;
     }

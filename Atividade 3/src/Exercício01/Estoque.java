@@ -1,10 +1,14 @@
 package Exercício01;
 
+import java.util.Scanner;
+
 public class Estoque {
-    public String nome;
-    public float preco;
-    public int quantidade;
-    public float valorTotal;
+    private String nome;
+    private float preco;
+    private int quantidade;
+    private float valorTotal;
+
+    Scanner sc = new Scanner(System.in);
 
     public void Status() {
         System.out.println("--------------------");
@@ -12,6 +16,23 @@ public class Estoque {
         System.out.println("Preço do produto: " + this.preco);
         System.out.println("Quantidade do produto: " + this.quantidade);
         System.out.println("Valor total: " + this.valorTotal);
+    }
+
+    public void cadastraEstoque() {
+        System.out.println("Digite o nome do produto: ");
+        this.nome = sc.next();
+        System.out.println("Digite agora o preço do produto: ");
+        this.preco = sc.nextFloat();
+        while (this.preco < 0) {
+            System.out.println("Valor inválido para preço! Digite novamente: ");
+            this.preco = sc.nextFloat();
+        }
+        System.out.println("Por fim, digite a quantidade do estoque desse produto: ");
+        this.quantidade = sc.nextInt();
+        while (this.quantidade < 0) {
+            System.out.println("Quantidade inválida! Digite novamente");
+            this.quantidade = sc.nextInt();
+        }
     }
 
     public void insereEstoque(int qte) {
@@ -22,7 +43,7 @@ public class Estoque {
 
     public void retiraEstoque (int qte) {
         if (qte > this.quantidade) {
-            System.out.println("Não é possível retirar além dos produtos em estoque!");
+            System.out.println("Não é possível retirar a mais da quantidade de produtos em estoque!");
         }
         else {
             this.quantidade -= qte;
