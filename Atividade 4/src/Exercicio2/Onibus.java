@@ -1,10 +1,8 @@
 package Exercicio2;
 
-import java.util.Scanner;
+public class Onibus extends Veiculo {
 
-public class Carro extends Veiculo{
-
-    Carro(String placa, String marca, String modelo, int ano) {
+    Onibus(String placa, String marca, String modelo, int ano) {
         super(placa, marca, modelo, ano);
     }
 
@@ -15,10 +13,10 @@ public class Carro extends Veiculo{
 
     @Override
     public void exibirDetalhes() {
-        System.out.println("Placa do Carro: " + this.placa);
+        System.out.println("Placa do Ônibus: " + this.placa);
         System.out.println("Marca: " + this.marca);
         System.out.println("Modelo: " + this.modelo);
-        System.out.println("Ano: " + this.anoFabricacao);
+        System.out.println("Ano de fabricação: " + this.anoFabricacao);
         System.out.println("Valor: " + this.valor);
     }
 }
