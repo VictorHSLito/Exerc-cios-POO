@@ -1,6 +1,6 @@
 package Exercicio02;
 
-public class Onibus extends Veiculo {
+public class Onibus extends Exercicio02.Veiculo {
 
     Onibus(String placa, String marca, String modelo, int ano) {
         super(placa, marca, modelo, ano);

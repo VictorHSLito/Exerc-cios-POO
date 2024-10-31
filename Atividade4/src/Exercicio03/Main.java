@@ -2,6 +2,11 @@ package Exercicio03;
 
 import java.util.Scanner;
 
+/*
+Teria sido interessante ter criado uma classe abstrata que funcionasse
+como molde para as outras classes. Assim não haveria tanto reuso de código.
+ */
+
 public class Main {
     public static void main(String[] args) {
         int opc;
@@ -20,12 +25,15 @@ public class Main {
         switch (opc) {
             case 1:
                 QuartoSimples q1 = new QuartoSimples();
+                q1.exibirDetalhes(q1.getDias());
                 break;
             case 2:
                 QuartoDuplo q2 = new QuartoDuplo();
+                q2.exibirDetalhes(q2.getDias());
                 break;
             case 3:
                 Suite s1 = new Suite();
+                s1.exibirDetalhes(s1.getDias());
                 break;
             default:
                 System.out.println("Não foi escolhida uma opção válida");
