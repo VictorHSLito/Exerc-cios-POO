@@ -1,4 +1,4 @@
-package Exercício01;
+package Exercicio01;
 
 public class ContaPoupanca extends ContaBancaria {
     int IncomeDay;
