@@ -15,7 +15,7 @@ public class Carro extends Veiculo{
             this.valor -= idadeVeiculo*2000;
             if (this.valor > 0) {
                 double ipva = (4.0/100)*this.valor;
-                System.out.printf("O valor do IPVA do carro é %.2f", ipva);
+                System.out.printf("O valor do IPVA do carro é R$ %.2f\n", ipva);
                 System.out.println();
             }
             else { /*Caso o valor do veículo venha a ser menor ou igual a zero, significa que ele desvalorizou a ponto
@@ -26,7 +26,7 @@ public class Carro extends Veiculo{
         }
         else if (idadeVeiculo == 0) {
             double ipva = (4.0/100)*this.valor;
-            System.out.println("O valor do IPVA do carro é: " + ipva);
+            System.out.println("O valor do IPVA do carro é: R$ " + ipva);
             System.out.println();
         }
         else {
@@ -40,7 +40,7 @@ public class Carro extends Veiculo{
         System.out.println("Marca: " + this.marca);
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Ano: " + this.anoFabricacao);
-        System.out.println("Valor: " + this.valor);
-        System.out.println();
+        System.out.println("Valor: R$ " + this.valor);
+        System.out.println("*================================*");
     }
 }

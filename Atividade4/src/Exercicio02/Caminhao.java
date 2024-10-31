@@ -1,6 +1,7 @@
 package Exercicio02;
 
 public class Caminhao extends Veiculo{
+
     Caminhao(String placa, String marca, String modelo, int ano) {
         super(placa, marca, modelo, ano);
     }
@@ -15,7 +16,7 @@ public class Caminhao extends Veiculo{
             this.valor -= 5000*idadeVeiculo;
             if(this.valor > 0) {
                 double ipva = (1.5/100) * this.valor;
-                System.out.printf("O valor do IPVA do caminhão é %.2f", ipva);
+                System.out.printf("O valor do IPVA do caminhão é R$ %.2f\n", ipva);
                 System.out.println();
             }
             else { /*Caso o valor do veículo venha a ser menor ou igual a zero, significa que ele desvalorizou a ponto
@@ -26,7 +27,7 @@ public class Caminhao extends Veiculo{
         }
         else if (idadeVeiculo == 0) {
             double ipva = (1.5/100)*this.valor;
-            System.out.println("O valor do IPVA do caminhão é: " + ipva);
+            System.out.println("O valor do IPVA do caminhão é: R$ " + ipva);
             System.out.println();
         }
         else {
@@ -40,7 +41,7 @@ public class Caminhao extends Veiculo{
         System.out.println("Marca: " + this.marca);
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Ano: " + this.anoFabricacao);
-        System.out.println("Valor: " + this.valor);
-        System.out.println();
+        System.out.println("Valor: R$ " + this.valor);
+        System.out.println("*================================*");
     }
 }

@@ -15,7 +15,7 @@ public class Onibus extends Exercicio02.Veiculo {
             this.valor -= idadeVeiculo*3000;
             if (this.valor > 0) {
                 double ipva = (2.0/100)*this.valor;
-                System.out.printf("O valor do IPVA do ônibus é %.2f", ipva);
+                System.out.printf("O valor do IPVA do ônibus é %.2f\n", ipva);
                 System.out.println();
             }
             else { /*Caso o valor do veículo venha a ser menor ou igual a zero, significa que ele desvalorizou a ponto
@@ -40,6 +40,6 @@ public class Onibus extends Exercicio02.Veiculo {
         System.out.println("Modelo: " + this.modelo);
         System.out.println("Ano de fabricação: " + this.anoFabricacao);
         System.out.println("Valor: " + this.valor);
-        System.out.println();
+        System.out.println("*================================*");
     }
 }

@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public abstract class Veiculo {
     Scanner sc = new Scanner(System.in);
-    String placa;
-    String marca;
-    String modelo;
-    int anoFabricacao;
-    float valor;
+    protected String placa;
+    protected String marca;
+    protected String modelo;
+    protected int anoFabricacao;
+    protected float valor;
 
     Veiculo (String placa, String marca, String modelo, int ano) {
         this.placa = placa;
@@ -21,8 +21,13 @@ public abstract class Veiculo {
 
     abstract void exibirDetalhes();
 
-    private void setValor() {
-        System.out.println("Qual será o valor do automóvel?");
-        this.valor = sc.nextFloat();
+    protected void setValor() {
+       do {
+           System.out.print("Qual será o valor do automóvel? ");
+           this.valor = sc.nextFloat();
+           if (this.valor < 20000) {
+               System.out.println("Valor inválido para automóvel! Digite um valor acima de R$ 20.000");
+           }
+       } while (valor < 20000);
     }
 }
