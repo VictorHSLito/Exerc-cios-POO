@@ -1,4 +1,4 @@
-package Exercicio2;
+package Exercicio02;
 
 public class Caminhao extends Veiculo{
     Caminhao(String placa, String marca, String modelo, int ano) {
